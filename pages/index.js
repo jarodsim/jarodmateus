@@ -45,8 +45,21 @@ export default function Home() {
         </div>
       </motion.header>
 
+      {/* menu responsivo - mobile */}
       {showMenu ? (
-        <div className={styles.content_menu_mobile}>
+        <motion.div className={styles.content_menu_mobile} initial="hidden" animate="visible" variants={{
+          hidden: {
+            scale: .8,
+            opacity: 0
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: .2
+            }
+          },
+        }}>
           <button className={styles.button_close_menu} onClick={() => setShowMenu(!showMenu)}><img src="/close.png" alt="close menu icon" /></button>
           <ul className={styles.menu_mobile_list}>
             <li><a href="/">About</a></li>
@@ -54,7 +67,7 @@ export default function Home() {
             <li><a href="/">Projects</a></li>
             <li><a href="/">Talk to me</a></li>
           </ul>
-        </div>
+        </motion.div>
       ) : ''}
 
       <motion.div className={styles.content} initial="hidden" animate="visible" variants={{
