@@ -17,7 +17,16 @@ export default function Home() {
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Site sobre Jarod Mateus" />
         <meta name="author" content="Jarod Mateus" />
+
+        {/* local fonts */}
+        <link
+            rel="preload"
+            href="/fonts/Glacial/GlacialIndifference-Regular.otf"
+            as="font"
+            crossOrigin=""
+          />
       </Head>
+      {/* header */}
       <motion.header className={styles.header} initial="hidden" animate="visible" variants={{
         hidden: {
           scale: .8,
@@ -31,7 +40,9 @@ export default function Home() {
           }
         },
       }}>
-        <h1>JAROD MATEUS</h1>
+        <div className={styles.logo}>
+          <h1>JAROD MATEUS</h1>
+        </div>
 
         <ul className={styles.menu_desktop}>
           <li><a href="/">About</a></li>
@@ -41,7 +52,7 @@ export default function Home() {
         </ul>
 
         <div className={styles.menu_mobile}>
-          <button className={styles.button_open_menu} onClick={() => setShowMenu(!showMenu)}><img src="/menu.png" alt="open menu icon" /></button>
+          <button className={styles.button_open_menu} onClick={() => setShowMenu(!showMenu)}><img src="/icons/menu.png" alt="open menu icon" /></button>
         </div>
       </motion.header>
 
@@ -60,7 +71,7 @@ export default function Home() {
             }
           },
         }}>
-          <button className={styles.button_close_menu} onClick={() => setShowMenu(!showMenu)}><img src="/close.png" alt="close menu icon" /></button>
+          <button className={styles.button_close_menu} onClick={() => setShowMenu(!showMenu)}><img src="/icons/close.png" alt="close menu icon" /></button>
           <ul className={styles.menu_mobile_list}>
             <li><a href="/">About</a></li>
             <li><a href="/">Technologies</a></li>
@@ -70,6 +81,7 @@ export default function Home() {
         </motion.div>
       ) : ''}
 
+      {/* content - main */}
       <motion.div className={styles.content} initial="hidden" animate="visible" variants={{
         hidden: {
           scale: .8,

@@ -17,3 +17,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "GlacialIndifference-Regular";
+  src: url("/fonts/Glacial/GlacialIndifference-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
