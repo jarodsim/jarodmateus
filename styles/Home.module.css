@@ -5,9 +5,8 @@
   flex-direction: column;
   justify-content: initial;
   align-items: center;
-  background: #0F2027;
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background-color: #404556;
+  font-family: 'GlacialIndifference-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header {
@@ -17,8 +16,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'GlacialIndifference-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #fff;
+  color: #73d8cb;
 }
 
 .logo{
@@ -46,14 +44,15 @@
 }
 
 .menu_desktop li a {
-  color: #ddd;
+  color: #73d8cb;
+  /* color: #ddd; */
   min-width: 80px;
   font-size: 1.5em;
   transition: 0.2s;
 }
 
 .menu_desktop li a:hover {
-  color: #5E17EB;
+  color: #2aede3;
 }
 
 .content {
@@ -64,6 +63,7 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  color: #73d8cb;
 }
 
 .title {
@@ -76,13 +76,12 @@
 }
 
 .content h1 {
-  color: #fff;
   font-size: 3.0em;
   font-weight: 500;
 }
 
 .content h1 span {
-  color: #5E17EB;
+  color: #2aede3;
 }
 
 .div_scroll {
@@ -96,14 +95,13 @@
 .vertical {
   border-left: 2px solid #ddd;
   height: 100px;
-  -webkit-animation: glowing 2000ms infinite;
-  -moz-animation: glowing 2000ms infinite;
-  -o-animation: glowing 2000ms infinite;
-  animation: glowing 2000ms infinite;
+  -webkit-animation: glowing 5000ms infinite;
+  -moz-animation: glowing 5000ms infinite;
+  -o-animation: glowing 5000ms infinite;
+  animation: glowing 5000ms infinite;
 }
 
 .content p {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ddd;
   font-size: 0.8em;
 }
@@ -178,25 +176,25 @@
 
 /* animation scroll down */
 @-webkit-keyframes glowing {
-  0% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
-  50% { border-color: #5E17EB; -webkit-box-shadow: 0 0 3px #5E17EB; }
-  100% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
+  0% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
+  50% { border-color: #2aede3; -webkit-box-shadow: 0 0 3px #2aede3; }
+  100% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
 }
 
 @-moz-keyframes glowing {
-  0% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
-  50% { border-color: #5E17EB; -webkit-box-shadow: 0 0 3px #5E17EB; }
-  100% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
+  0% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
+  50% { border-color: #2aede3; -webkit-box-shadow: 0 0 3px #2aede3; }
+  100% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
 }
 
 @-o-keyframes glowing {
-  0% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
-  50% { border-color:#5E17EB; -webkit-box-shadow: 0 0 3px #5E17EB; }
-  100% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
+  0% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
+  50% { border-color:#2aede3; -webkit-box-shadow: 0 0 3px #2aede3; }
+  100% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
 }
 
 @keyframes glowing {
-  0% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
-  50% { border-color: #5E17EB; -webkit-box-shadow: 0 0 3px #5E17EB; }
-  100% { border-color: #2C5364; -webkit-box-shadow: 0 0 3px #0F2027; }
+  0% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
+  50% { border-color: #2aede3; -webkit-box-shadow: 0 0 3px #2aede3; }
+  100% { border-color:#404556; -webkit-box-shadow: 0 0 3px #4b5063; }
 }
