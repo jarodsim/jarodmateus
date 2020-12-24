@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 
 import { motion } from 'framer-motion';
 
+import About from './about'
+
 export default function Home() {
   const [showMenu, setShowMenu] = useState(false)
 
@@ -12,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Jarod Mateus</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Site sobre Jarod Mateus" />
@@ -45,7 +47,7 @@ export default function Home() {
         </div>
 
         <ul className={styles.menu_desktop}>
-          <li><a href="/">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="/">Technologies</a></li>
           <li><a href="/">Projects</a></li>
           <li><a href="/">Talk to me</a></li>
@@ -73,10 +75,10 @@ export default function Home() {
         }}>
           <button className={styles.button_close_menu} onClick={() => setShowMenu(!showMenu)}><img src="/icons/close.png" alt="close menu icon" /></button>
           <ul className={styles.menu_mobile_list}>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Technologies</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Talk to me</a></li>
+            <li><a href="#about" onClick={() => setShowMenu(false)}>About</a></li>
+            <li><a href="/" onClick={() => setShowMenu(false)}>Technologies</a></li>
+            <li><a href="/" onClick={() => setShowMenu(false)}>Projects</a></li>
+            <li><a href="/" onClick={() => setShowMenu(false)}>Talk to me</a></li>
           </ul>
         </motion.div>
       ) : ''}
@@ -98,12 +100,15 @@ export default function Home() {
         <div className={styles.title}>
           <h1>Hello, my name is <span>Jarod Mateus</span> and I'm a fullstack web developer</h1>
         </div>
+
         <div className={styles.div_scroll}>
           <div className={styles.vertical}></div>
           <p>SCROLL DOWN</p>
           <small>Site under development</small>
         </div>
       </motion.div>
+
+      <About/>
     </div>
   )
 }
