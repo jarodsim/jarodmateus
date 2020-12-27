@@ -22,17 +22,6 @@ export default function Home() {
 				<meta name="description" content="Site sobre Jarod Mateus" />
 				<meta name="author" content="Jarod Mateus" />
 
-				{/* Global site tag (gtag.js) - Google Analytics */}
-				<script
-					async
-					src="https://www.googletagmanager.com/gtag/js?id=G-HRD1LD70WQ"
-				></script>
-				<script>
-					window.dataLayer = window.dataLayer || [] function gtag()
-					{dataLayer.push(arguments)}
-					gtag('js', new Date()) gtag('config', 'G-HRD1LD70WQ')
-				</script>
-
 				{/* local fonts */}
 				<link
 					rel="preload"
