@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  min-width: 20%;
+}
+
+.logo h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.menu_descktop {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu_descktop a {
+  min-width: 80px;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+
+.menu_descktop a:hover {
+  color: #2aede3;
+}
+
+.btn_menu {
+  display: none;
+}
+
+.btn_menu,
+.btn_menu_close {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn_menu_close {
+  width: 80px;
+  height: 50px;
+  align-self: flex-end;
+  background-color: tomato;
+}
+
+.menu_mobile {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  z-index: 100;
+  background-color: #404556;
+  overscroll-behavior: contain;
+  padding: 0px 10px;
+}
+
+.menu_mobile a {
+  min-width: 100%;
+  font-size: 2.1em;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .menu_descktop {
+    display: none;
+  }
+
+  .btn_menu {
+    display: flex;
+  }
+
+  .container {
+    padding: 0px 10px;
+  }
+}
