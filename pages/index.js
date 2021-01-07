@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import About from './about'
 import Main from './main'
+import Technologies from './technologies'
 
 import Header from './components/Header'
 
@@ -33,6 +34,7 @@ export default function Home() {
 			<Header />
 			<Main />
 			<About />
+			<Technologies />
 		</div>
 	)
 }
