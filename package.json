@@ -12,5 +12,9 @@
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/jarodsim/jarodmateus.git",
+  "author": "Jarod <jarodsim@gmail.com>",
+  "license": "MIT"
 }
