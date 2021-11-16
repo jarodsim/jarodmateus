@@ -1,31 +1,31 @@
-import { DiAndroid, DiTerminal } from "react-icons/di";
+import { DiReact, DiTerminal, DiNodejs, DiDart } from "react-icons/di";
 import { SiJava, SiFirebase, SiGit } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 
 export const Skills = [
   {
-    slug: "android",
-    Component: DiAndroid,
-    title: "Android",
-    Description: () => <>I work on ROMs, Kernels & Android Apps using Java.</>,
+    slug: "reactjs",
+    Component: DiReact,
+    title: "ReactJS",
+    Description: () => <>Currently developing web applications with ReactJS.</>,
   },
   {
     slug: "flutter",
     Component: RiFlutterFill,
     title: "Flutter",
-    Description: () => <>Currently working with Dart & Flutter for app development. </>,
+    Description: () => <>In studies, currently studying flutter. </>,
   },
   {
-    slug: "java",
-    Component: SiJava,
-    title: "Java",
-    Description: () => <>I can code in Java. But I mainly use it for Android app development.</>,
+    slug: "nodejs",
+    Component: DiNodejs,
+    title: "NodeJS",
+    Description: () => <>I develop backend applications using nodejs.</>,
   },
   {
-    slug: "terminal",
-    Component: DiTerminal,
-    title: "Scripting",
-    Description: () => <>I have written dozens of Shell scripts for various purposes.</>,
+    slug: "dart",
+    Component: DiDart,
+    title: "Dart",
+    Description: () => <>Because of flutter, I'm also in the early stages of development with dart..</>,
   },
   {
     slug: "firebase",
@@ -37,6 +37,6 @@ export const Skills = [
     slug: "git",
     Component: SiGit,
     title: "Git",
-    Description: () => <>Git is a tool that I use every day. I use GitHub for pushing my code.</>,
+    Description: () => <>Git is a tool that I use every day. I use GitHub for pushing my code and teamwork.</>,
   },
 ];

@@ -31,23 +31,47 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en-GB'>
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-          <meta name="title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta name="description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta property="og:description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="og:image" content="https://www.vipuljha.com/images/banner.png" />
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta property="twitter:description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="twitter:image" content="https://www.vipuljha.com/images/banner.png" />
+          <link
+            href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'
+            rel='stylesheet'
+          />
+          <meta name='title' content='C' />
+          <meta
+            name='description'
+            content="Hello how are you? I am Jarod Mateus. I'm a software developer and also a flutter newbie."
+          />
+          <meta property='og:type' content='website' />
+          <meta
+            property='og:title'
+            content='Jarod Cavalcante - Desenvolvedor de software'
+          />
+          <meta
+            property='og:description'
+            content="Hello how are you? I am Jarod Mateus. I'm a software developer and also a flutter newbie."
+          />
+          <meta
+            property='og:image'
+            content='https://www.jarodmateus.tech/images/banner.png'
+          />
+          <meta property='twitter:card' content='summary_large_image' />
+          <meta
+            property='twitter:title'
+            content="Hello how are you? I am Jarod Matthew. I'm a software developer and also a flutter newbie."
+          />
+          <meta
+            property='twitter:description'
+            content="Hello how are you? I am Jarod Mateus. I'm a software developer and also a flutter newbie."
+          />
+          <meta
+            property='twitter:image'
+            content='https://www.jarodmateus.tech/images/banner.png'
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
