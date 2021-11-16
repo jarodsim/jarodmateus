@@ -1,20 +1,22 @@
 {
-  "name": "jarodmateus",
+  "name": "portfolio_nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
-    "framer-motion": "^3.1.1",
-    "next": "10.0.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "next": "10.2.3",
+    "ngrok": "^4.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7"
   },
-  "main": "index.js",
-  "repository": "https://github.com/jarodsim/jarodmateus.git",
-  "author": "Jarod <jarodsim@gmail.com>",
-  "license": "MIT"
+  "devDependencies": {
+    "next-optimized-images": "^2.6.2"
+  }
 }
