@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang='en-GB'>
+      <Html lang='en-US'>
         <Head>
           <link
             href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'
@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
           <meta property='og:type' content='website' />
           <meta
             property='og:title'
-            content='Jarod Cavalcante - Desenvolvedor de software'
+            content='Jarod Mateus - Desenvolvedor de software'
           />
           <meta
             property='og:description'
@@ -56,7 +56,7 @@ export default class MyDocument extends Document {
           <meta property='twitter:card' content='summary_large_image' />
           <meta
             property='twitter:title'
-            content="Hello how are you? I am Jarod Matthew. I'm a software developer and also a flutter newbie."
+            content="Hello how are you? I am Jarod Mateus. I'm a software developer and also a flutter newbie."
           />
           <meta
             property='twitter:description'
