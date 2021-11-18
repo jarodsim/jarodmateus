@@ -1,29 +1,45 @@
-import React from 'react';
+import React from 'react'
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import {
+  BlogCard,
+  CardInfo,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from './ProjectsStyles'
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from '../../styles/GlobalComponents'
+import { projects } from '../../constants/constants'
 
 const Projects = () => (
-  <Section id="projects">
+  <Section id='projects'>
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Img src={p.image} />
+            <Img src={p.image} alt={`image of the project ${p.title}`} />
 
             <HeaderThree title={p.title}>{p.title}</HeaderThree>
             <Hr />
 
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            <CardInfo className='card-info'>{p.description}</CardInfo>
             <div>
               <TitleContent>Tech Stack</TitleContent>
               <Hr />
               <TagList>
                 {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
+                  return <Tag key={i}>{t}</Tag>
                 })}
               </TagList>
             </div>
@@ -32,10 +48,10 @@ const Projects = () => (
               <ExternalLinks href={p.source}>Source Code</ExternalLinks>
             </UtilityList>
           </BlogCard>
-        );
+        )
       })}
     </GridContainer>
   </Section>
-);
+)
 
-export default Projects;
+export default Projects
