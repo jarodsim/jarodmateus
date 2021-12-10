@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'UNIPAD3',
+    title: 'UNIPAD',
     description:
       'Code sharing service between programmers being you only need to create one URL, no saving or creating a account. Open Source :)',
     image: '/images/unipad.png',
