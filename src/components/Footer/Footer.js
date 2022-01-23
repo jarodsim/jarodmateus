@@ -38,7 +38,7 @@ const Footer = () => {
         <CompanyContainer>
           <Slogan>
             &copy; 2021{' '}
-            <Link href='https://www.jarodmateus.tech'> Jarod Mateus</Link> . All
+            <Link href='https://www.jarodmateus.com'> Jarod Mateus</Link> . All
             rights reserved.
           </Slogan>
         </CompanyContainer>
