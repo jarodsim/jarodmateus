@@ -1,5 +1,5 @@
-import { DiReact, DiTerminal, DiNodejs, DiDart } from "react-icons/di";
-import { SiJava, SiFirebase, SiGit } from "react-icons/si";
+import { DiReact, DiNodejs, DiDart } from "react-icons/di";
+import { SiFirebase, SiGit } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 
 export const Skills = [

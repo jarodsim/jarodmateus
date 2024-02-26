@@ -6,7 +6,7 @@ export const projects = [
     image: '/images/unipad.png',
     tags: ['ReactJS', 'JWT', 'MongoDB', 'Rest API'],
     source: 'https://github.com/jarodsim/unipad-frontend',
-    visit: 'https://unipad.herokuapp.com/',
+    visit: 'https://unipad.jarod.dev/',
     id: 0,
   },
   {

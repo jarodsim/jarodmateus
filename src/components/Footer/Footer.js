@@ -3,7 +3,6 @@ import {
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
-  AiFillTwitterCircle,
 } from 'react-icons/ai'
 import { Link } from '../../styles/GlobalComponents'
 import { SocialIcons } from '../Header/HeaderStyles'
@@ -38,7 +37,7 @@ const Footer = () => {
         <CompanyContainer>
           <Slogan>
             &copy; 2021{' '}
-            <Link href='https://www.jarodmateus.com'> Jarod Mateus</Link> . All
+            <Link href='https://jarod.dev'> Jarod Mateus</Link> . All
             rights reserved.
           </Slogan>
         </CompanyContainer>
@@ -52,9 +51,6 @@ const Footer = () => {
           <SocialIcons href='https://www.instagram.com/jarodsim/'>
             <AiFillInstagram size='3rem' />
           </SocialIcons>
-          {/* <SocialIcons href='https://www.twitter.com/lordarcadius'>
-            <AiFillTwitterCircle size='3rem' />
-          </SocialIcons> */}
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
