@@ -13,12 +13,10 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hi,
-        </SectionTitle>
-        <SectionText>
-          Hello how are you? I am Jarod Mateus. I'm a software developer and
+          Hi, <br></br>
+          I am Jarod Mateus. I'm a software developer and
           also a flutter newbie.
-        </SectionText>
+        </SectionTitle>
         <Button
           onClick={(e) => {
             e.preventDefault()

@@ -21,7 +21,7 @@ const Header = () => (
         href='/'
         style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
 
-        <img src='/logo.png' height={40} width={40} />{' '}
+        <img src='/logo.png' height={40} width={40} alt='imagem de logo'/>{' '}
         <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
           Jarod Mateus
         </span>
