@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'
             rel='stylesheet'
           />
-          <meta name='title' content='C' />
+          <meta name='title' content='Jarod Mateus' />
           <meta
             name='description'
             content="Hello how are you? I am Jarod Mateus. I'm a software developer and also a flutter newbie."
