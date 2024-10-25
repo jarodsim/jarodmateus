@@ -66,7 +66,7 @@ export default class MyDocument extends Document {
             property='twitter:image'
             content='https://www.jarodmateus.com/images/banner.png'
           />
-          <meta name="google-adsense-account" content="ca-pub-9385210236159025"></meta>
+          <meta name="google-adsense-account" content="ca-pub-9385210236159025"/>
         </Head>
         <body>
           <Main />
