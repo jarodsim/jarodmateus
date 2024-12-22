@@ -21,7 +21,9 @@ const Header = () => (
         href='/'
         style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
 
-        <img src='/logo.png' height={40} width={40} alt='imagem de logo'/>{' '}
+        <img src='/logo.png' height={40} width={40} alt='imagem de logo' style={{
+          borderRadius: 50,
+        }} />{' '}
         <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
           Jarod Mateus
         </span>
@@ -51,9 +53,6 @@ const Header = () => (
       </SocialIcons>
       <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/'>
         <AiFillLinkedin size='3rem' />
-      </SocialIcons>
-      <SocialIcons href='https://www.instagram.com/jarodsim/'>
-        <AiFillInstagram size='3rem' />
       </SocialIcons>
     </Div3>
   </Container>
