@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
       <Html lang='pt-br'>
         <Head>
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9385210236159025"
-            crossorigin="anonymous"></script>
+            crossOrigin="anonymous"></script>
           <link
             href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'
             rel='stylesheet'

@@ -7,6 +7,7 @@ import {
 } from '../../styles/GlobalComponents'
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
+import Link from 'next/link'
 
 const Hero = (props) => (
   <>
@@ -24,6 +25,7 @@ const Hero = (props) => (
         >
           My Resume
         </Button>
+        Maintainer of <Link href={'https://www.npmjs.com/package/dom-watchdog'} target='_blank' >dom-watchdog</Link>
       </LeftSection>
     </Section>
   </>
