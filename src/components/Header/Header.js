@@ -25,7 +25,7 @@ const Header = () => (
           borderRadius: 50,
         }} />{' '}
         <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
-          Jarod Mateus
+          Jarod Cavalcante
         </span>
 
       </Link>

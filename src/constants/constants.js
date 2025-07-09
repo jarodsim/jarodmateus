@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Meu Trocado',
+    description:
+      'Web app to easily manage your personal finances. Track expenses, income, loans, and goals simply and efficiently.',
+    image: '/images/meutrocado.png',
+    tags: ['NextJS', 'Supabase', 'PostgreSQL'],
+    visit: 'https://meutrocado.jarod.dev/',
+    id: 0,
+  },
+  {
     title: 'Recursofy',
     description:
       'A SaaS for managing resource allocation (e.g., classrooms, smart boards, vehicles) for universities, colleges, and companies. It includes scheduling, notifications, and detailed reporting functionalities.',

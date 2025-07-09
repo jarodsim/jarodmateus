@@ -15,7 +15,7 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center>
           Hi, <br></br>
-          I am Jarod Mateus. I'm a software developer.
+          I am Jarod Cavalcante. I'm a software developer.
         </SectionTitle>
         <Button
           onClick={(e) => {
