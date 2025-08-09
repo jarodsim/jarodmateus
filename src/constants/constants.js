@@ -37,16 +37,6 @@ export const projects = [
     visit: 'https://www.infotecpi.com.br/',
     id: 2,
   },
-  {
-    title: 'Loto Ceará',
-    description:
-      'Application to follow all the results of your dream lottery, lotece do ceará.',
-    image: '/images/lotoce.png',
-    tags: ['Flutter', 'SQLite'],
-    visit:
-      'https://play.google.com/store/apps/details?id=com.jemsbr.lotoceara&hl=pt_BR&gl=US',
-    id: 3,
-  },
 ]
 
 export const TimeLineData = [
