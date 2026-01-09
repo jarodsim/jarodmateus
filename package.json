@@ -10,7 +10,7 @@
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
     "eslint-config-next": "latest",
-    "next": "latest",
+    "next": "15.5.8",
     "ngrok": "^4.0.1",
     "react": "latest",
     "react-dom": "latest",
