@@ -8,28 +8,33 @@ import {
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
 import Link from 'next/link'
+import { useTranslation } from '../../i18n/LanguageContext'
 
-const Hero = (props) => (
-  <>
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Hi, <br></br>
-          I am Jarod Cavalcante. <br />
-          Full Stack Developer. Building scalable web apps with Next.js and AWS Serverless.
-        </SectionTitle>
-        <Button
-          onClick={(e) => {
-            e.preventDefault()
-            window.location.href = '/files/resume.pdf'
-          }}
-        >
-          My Resume
-        </Button>
-        Maintainer of <Link href={'https://www.npmjs.com/package/dom-watchdog'} target='_blank' >dom-watchdog</Link>
-      </LeftSection>
-    </Section>
-  </>
-)
+const Hero = (props) => {
+  const { t } = useTranslation()
+
+  return (
+    <>
+      <Section row nopadding>
+        <LeftSection>
+          <SectionTitle main center>
+            {t.hero.greeting} <br></br>
+            {t.hero.name} <br />
+            {t.hero.subtitle}
+          </SectionTitle>
+          <Button
+            onClick={(e) => {
+              e.preventDefault()
+              window.location.href = '/files/resume.pdf'
+            }}
+          >
+            {t.hero.resumeButton}
+          </Button>
+          {t.hero.maintainer} <Link href={'https://www.npmjs.com/package/dom-watchdog'} target='_blank' >dom-watchdog</Link>
+        </LeftSection>
+      </Section>
+    </>
+  )
+}
 
 export default Hero

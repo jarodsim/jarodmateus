@@ -17,17 +17,16 @@ import {
   SocialContainer,
   SocialIconsContainer,
 } from './FooterStyles'
+import { useTranslation } from '../../i18n/LanguageContext'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Chat</LinkTitle>
-          <LinkItem href='https://t.me/jarodcavalcante'>Telegram</LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
+          <LinkTitle>{t.footer.email}</LinkTitle>
           <LinkItem href='mailto:jarodsim@gmail.com'>
             jarodsim@gmail.com
           </LinkItem>
@@ -37,8 +36,8 @@ const Footer = () => {
         <CompanyContainer>
           <Slogan>
             &copy; {new Date().getFullYear()}
-            <Link href='https://jarod.dev'> Jarod Cavalcante</Link> . All
-            rights reserved.
+            <Link href='https://jarod.dev'> Jarod Cavalcante</Link>
+            {t.footer.copyright}
           </Slogan>
         </CompanyContainer>
         <SocialContainer>

@@ -52,7 +52,7 @@ export const TimeLineData = [
   { year: 2021, text: 'I got my first job as a junior software developer.' },
   {
     year: '2021 - Current',
-    text: 'Full Stack & Frontend Tech Lead. Leading infrastructure migration to AWS (OpenNext + Terraform), implementing CI/CD pipelines, and building IoT/Backend solutions with Python/AWS Timestream.',
+    text: 'Full Stack. Leading infrastructure migration to AWS (OpenNext + Terraform), implementing CI/CD pipelines, and building IoT/Backend solutions with Python/AWS Timestream.',
   },
   {
     year: 2025,

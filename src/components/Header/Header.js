@@ -13,49 +13,56 @@ import {
   NavLink,
   SocialIcons,
 } from './HeaderStyles'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useTranslation } from '../../i18n/LanguageContext'
 
-const Header = () => (
-  <Container>
-    <Div1>
-      <Link
-        href='/'
-        style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
+const Header = () => {
+  const { t } = useTranslation()
 
-        <img src='/logo.png' height={40} width={40} alt='imagem de logo' style={{
-          borderRadius: 50,
-        }} />{' '}
-        <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
-          Jarod Cavalcante
-        </span>
+  return (
+    <Container>
+      <Div1>
+        <Link
+          href='/'
+          style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
 
-      </Link>
-    </Div1>
-    <Div2>
-      <li>
-        <Link href='#projects' legacyBehavior>
-          <NavLink>Projects</NavLink>
+          <img src='/logo.png' height={40} width={40} alt='imagem de logo' style={{
+            borderRadius: 50,
+          }} />{' '}
+          <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
+            Jarod Cavalcante
+          </span>
+
         </Link>
-      </li>
-      <li>
-        <Link href='#skills' legacyBehavior>
-          <NavLink>Skills</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href='#about' legacyBehavior>
-          <NavLink>About</NavLink>
-        </Link>
-      </li>
-    </Div2>
-    <Div3>
-      <SocialIcons href='https://github.com/jarodsim'>
-        <AiFillGithub size='3rem' />
-      </SocialIcons>
-      <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/'>
-        <AiFillLinkedin size='3rem' />
-      </SocialIcons>
-    </Div3>
-  </Container>
-)
+      </Div1>
+      <Div2>
+        <li>
+          <Link href='#projects' legacyBehavior>
+            <NavLink>{t.nav.projects}</NavLink>
+          </Link>
+        </li>
+        <li>
+          <Link href='#skills' legacyBehavior>
+            <NavLink>{t.nav.skills}</NavLink>
+          </Link>
+        </li>
+        <li>
+          <Link href='#about' legacyBehavior>
+            <NavLink>{t.nav.about}</NavLink>
+          </Link>
+        </li>
+      </Div2>
+      <Div3>
+        <SocialIcons href='https://github.com/jarodsim'>
+          <AiFillGithub size='3rem' />
+        </SocialIcons>
+        <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/'>
+          <AiFillLinkedin size='3rem' />
+        </SocialIcons>
+        <LanguageSwitcher />
+      </Div3>
+    </Container>
+  )
+}
 
 export default Header
