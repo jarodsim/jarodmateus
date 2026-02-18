@@ -36,7 +36,7 @@ const Footer = () => {
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>
-            &copy; 2021{' '}
+            &copy; {new Date().getFullYear()}
             <Link href='https://jarod.dev'> Jarod Cavalcante</Link> . All
             rights reserved.
           </Slogan>

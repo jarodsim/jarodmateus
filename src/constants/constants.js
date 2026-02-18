@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Meu Trocado',
     description:
-      'Web app to easily manage your personal finances. Track expenses, income, loans, and goals simply and efficiently.',
+      'Personal finance SaaS built from scratch with Next.js and Supabase. Features secure authentication, real-time data, and high-performance UI.',
     image: '/images/meutrocado.png',
     tags: ['NextJS', 'Supabase', 'PostgreSQL'],
     visit: 'https://meutrocado.jarod.dev/',
@@ -11,31 +11,30 @@ export const projects = [
   {
     title: 'Recursofy',
     description:
-      'A SaaS for managing resource allocation (e.g., classrooms, smart boards, vehicles) for universities, colleges, and companies. It includes scheduling, notifications, and detailed reporting functionalities.',
+      'Corporate resource allocation platform. Built the Backend with Node.js, Prisma, and PostgreSQL, using Docker for consistent environments.',
     image: '/images/recursofy.png',
-    tags: ['ReactJS', 'NodeJS', 'PostgreSQL', 'Prisma'],
+    tags: ['ReactJS', 'NodeJS', 'PostgreSQL', 'Prisma', 'Docker'],
     visit: 'https://recursofy.com/',
-    id: 0,
-  },
-  {
-    title: 'UNIPAD',
-    description:
-      'Code sharing service between programmers being you only need to create one URL, no saving or creating a account. Open Source :)',
-    image: '/images/unipad.png',
-    tags: ['ReactJS', 'JWT', 'MongoDB', 'Rest API'],
-    source: 'https://github.com/jarodsim/unipad-frontend',
-    visit: 'https://unipad.jarod.dev/',
     id: 1,
   },
   {
-    title: 'INFO-TEC landing page',
+    title: 'Unipad',
     description:
-      'A landing page for the INFO-TEC internet provider. With descriptions of your services and customer service information.',
-    image: '/images/infotec.png',
-    tags: ['NextJS', 'Versel', 'Styled Components'],
-    source: 'https://github.com/infotecpi/landingpageinfotec',
-    visit: 'https://www.infotecpi.com.br/',
+      'Full Stack code sharing app. Built with React and MongoDB to practice modern architecture and performance optimization.',
+    image: '/images/unipad.png',
+    tags: ['ReactJS', 'MongoDB', 'Rest API'],
+    source: 'https://github.com/jarodsim/unipad-frontend',
+    visit: 'https://unipad.jarod.dev/',
     id: 2,
+  },
+  {
+    title: 'Infrastructure & Home Lab',
+    description:
+      'Self-hosted experimentation environment. Managing personal servers with Node.js, network automation, and traffic management.',
+    image: '/images/homelab.png',
+    tags: ['NodeJS', 'Self-hosted', 'Networking'],
+    visit: '#',
+    id: 3,
   },
 ]
 
@@ -51,4 +50,12 @@ export const TimeLineData = [
     text: 'I got my first job as a freelancer and entered the Computer Science College.',
   },
   { year: 2021, text: 'I got my first job as a junior software developer.' },
+  {
+    year: '2021 - Current',
+    text: 'Full Stack & Frontend Tech Lead. Leading infrastructure migration to AWS (OpenNext + Terraform), implementing CI/CD pipelines, and building IoT/Backend solutions with Python/AWS Timestream.',
+  },
+  {
+    year: 2025,
+    text: 'B.Sc. in Computer Science (UESPI).',
+  },
 ]

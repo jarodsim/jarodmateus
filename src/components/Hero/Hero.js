@@ -15,7 +15,8 @@ const Hero = (props) => (
       <LeftSection>
         <SectionTitle main center>
           Hi, <br></br>
-          I am Jarod Cavalcante. I'm a software developer.
+          I am Jarod Cavalcante. <br />
+          Full Stack Developer. Building scalable web apps with Next.js and AWS Serverless.
         </SectionTitle>
         <Button
           onClick={(e) => {

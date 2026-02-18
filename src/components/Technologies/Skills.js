@@ -1,141 +1,65 @@
 import { DiReact, DiNodejs } from 'react-icons/di';
 import {
-  SiTypescript,
-  SiPostgresql,
-  SiMongodb,
-  SiDocker,
-  SiNx,
   SiNextdotjs,
-  SiGithub,
   SiAwslambda,
-  SiVitest,
+  SiDocker,
+  SiTerraform,
 } from 'react-icons/si';
 import { RiFlutterFill } from 'react-icons/ri';
 import { FaPython } from 'react-icons/fa';
 
 export const Skills = [
   {
-    slug: 'nodejs',
-    Component: DiNodejs,
-    title: 'NodeJS',
-    Description: () => (
-      <>I develop backend solutions using NodeJS, including RESTful APIs.</>
-    ),
-  },
-  {
-    slug: 'python',
-    Component: FaPython,
-    title: 'Python',
-    Description: () => (
-      <>
-        I develop backend solutions and work with tools like AWS Lambda and
-        Pytest for testing.
-      </>
-    ),
-  },
-  {
-    slug: 'reactjs',
+    slug: 'frontend',
     Component: DiReact,
-    title: 'ReactJS',
+    title: 'Frontend',
     Description: () => (
       <>
-        I design and implement frontend solutions using ReactJS, including
-        integration with backend services.
+        Deep expertise in React ecosystem including Next.js and OpenNext.
+        Styling with Tailwind CSS and architecture with Turborepo.
       </>
     ),
   },
   {
-    slug: 'nextjs',
-    Component: SiNextdotjs,
-    title: 'NextJS',
-    Description: () => (
-      <>I develop web applications with NextJS for server-side rendering.</>
-    ),
-  },
-  {
-    slug: 'typescript',
-    Component: SiTypescript,
-    title: 'TypeScript',
+    slug: 'backend',
+    Component: DiNodejs,
+    title: 'Backend',
     Description: () => (
       <>
-        I use TypeScript for type-safe development in both frontend and backend
-        applications.
+        Building robust backend systems with Node.js and Python.
+        Experience with Serverless Framework and Event-driven architectures.
       </>
     ),
   },
   {
-    slug: 'aws',
+    slug: 'cloud',
     Component: SiAwslambda,
-    title: 'AWS',
+    title: 'Cloud (AWS)',
     Description: () => (
       <>
-        I utilize AWS services like Cognito, S3, Lambda, RDS, API Gateway,
-        DynamoDB and more for scalable applications.
+        Extensive AWS experience: Lambda, IoT Core, Timestream, DynamoDB,
+        S3, CloudFront, and Cognito.
       </>
     ),
   },
   {
-    slug: 'mongodb',
-    Component: SiMongodb,
-    title: 'MongoDB',
+    slug: 'devops',
+    Component: SiTerraform,
+    title: 'DevOps & Infra',
     Description: () => (
       <>
-        I work with MongoDB for building scalable and flexible database
-        solutions.
-      </>
-    ),
-  },
-  {
-    slug: 'postgresql',
-    Component: SiPostgresql,
-    title: 'PostgreSQL',
-    Description: () => (
-      <>I use PostgreSQL for relational database design and querying.</>
-    ),
-  },
-  {
-    slug: 'docker',
-    Component: SiDocker,
-    title: 'Docker',
-    Description: () => (
-      <>I containerize applications and manage environments using Docker.</>
-    ),
-  },
-  {
-    slug: 'nx',
-    Component: SiNx,
-    title: 'Nx Monorepo',
-    Description: () => <>I utilize Nx for managing monorepos.</>,
-  },
-  {
-    slug: 'git',
-    Component: SiGithub,
-    title: 'Git',
-    Description: () => (
-      <>
-        I use Git and GitHub daily for version control, collaboration, and CI/CD
-        pipelines.
-      </>
-    ),
-  },
-  {
-    slug: 'vitest',
-    Component: SiVitest,
-    title: 'vitest',
-    Description: () => (
-      <>
-        I write and maintain unit tests using Vitest to ensure code reliability.
+        Infrastructure as Code with Terraform. Containerization with Docker,
+        and CI/CD automation using GitHub Actions.
       </>
     ),
   },
   {
     slug: 'flutter',
     Component: RiFlutterFill,
-    title: 'Flutter',
+    title: 'Flutter (Learning)',
     Description: () => (
       <>
-        I develop mobile applications using Flutter for cross-platform
-        compatibility. (newbye)
+        Developing cross-platform mobile applications.
       </>
     ),
   },
