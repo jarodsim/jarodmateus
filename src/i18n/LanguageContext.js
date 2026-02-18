@@ -6,7 +6,7 @@ const translations = { en, 'pt-BR': ptBR }
 
 const LanguageContext = createContext()
 
-function detectLanguage() {
+export function detectLanguage() {
     // Check localStorage first
     if (typeof window !== 'undefined') {
         const saved = localStorage.getItem('preferred-language')
