@@ -10,7 +10,7 @@ const en = {
     hero: {
         greeting: 'Hi,',
         name: 'I am Jarod Cavalcante.',
-        subtitle: 'Full Stack Developer. Building scalable web apps with Next.js and AWS Serverless.',
+        subtitle: 'Full Stack Developer. Building scalable web apps with Next.js, Python, and AWS Serverless.',
         resumeButton: 'My Resume',
         maintainer: 'Maintainer of',
     },
@@ -22,15 +22,18 @@ const en = {
         sourceCode: 'Source Code',
         items: {
             0: {
-                description: 'Personal finance SaaS built from scratch with Next.js and Supabase. Features secure authentication, real-time data, and high-performance UI.',
+                description: 'Personal finance Android app built with Flutter. Track income, expenses, and credit cards in one place.',
             },
             1: {
-                description: 'Corporate resource allocation platform. Built the Backend with Node.js, Prisma, and PostgreSQL, using Docker for consistent environments.',
+                description: 'Gamified reading incentive platform for LPT/CNPq. Full ecosystem: RESTful API, reader PWA, admin panel, Desktop sync agent (Electron), and report generator.',
             },
             2: {
-                description: 'Full Stack code sharing app. Built with React and MongoDB to practice modern architecture and performance optimization.',
+                description: 'SaaS platform for corporate and university resource allocation. Built the backend with Node.js, Prisma, and PostgreSQL, using Docker for scalability.',
             },
             3: {
+                description: 'Full Stack code sharing app. Built with React, Node.js, and MongoDB to practice modern architecture and performance optimization.',
+            },
+            4: {
                 description: 'Self-hosted experimentation environment. Managing personal servers with Node.js, network automation, and traffic management.',
             },
         },
@@ -51,7 +54,7 @@ const en = {
             backend: 'Backend',
             cloud: 'Cloud (AWS)',
             devops: 'DevOps & Infra',
-            flutter: 'Flutter (Learning)',
+            flutter: 'Flutter (Hobby)',
         },
     },
 
@@ -59,11 +62,10 @@ const en = {
         title: 'My Journey',
         subtitle: 'In my journey to date, I have learned a great deal about development and life in general.',
         items: [
-            'Started my journey as a new developer.',
-            'I entered a technical college and took the technical course in information technology.',
-            'I started my studies at NodeJS and ReactJS.',
-            'I got my first job as a freelancer and entered the Computer Science College.',
-            'I got my first job as a junior software developer.',
+            'Enrolled at CTF/UFPI technical college, studying IT. CNPq/Pibic Jr. research scholarship.',
+            'Started studying NodeJS and ReactJS.',
+            'Started B.Sc. in Computer Science at UESPI. First job as a freelancer.',
+            'Joined Fundação Cearense de Pesquisa e Cultura as a Full Stack Developer (EyON/PaaSIoT).',
             'Full Stack. Leading infrastructure migration to AWS (OpenNext + Terraform), implementing CI/CD pipelines, and building IoT/Backend solutions with Python/AWS Timestream.',
             'B.Sc. in Computer Science (UESPI).',
         ],

@@ -10,7 +10,7 @@ const ptBR = {
     hero: {
         greeting: 'Olá,',
         name: 'Eu sou Jarod Cavalcante.',
-        subtitle: 'Desenvolvedor Full Stack. Construindo aplicações web escaláveis com Next.js e AWS Serverless.',
+        subtitle: 'Desenvolvedor Full Stack. Construindo aplicações web escaláveis com Next.js, Python e AWS Serverless.',
         resumeButton: 'Meu Currículo',
         maintainer: 'Mantenedor do',
     },
@@ -22,15 +22,18 @@ const ptBR = {
         sourceCode: 'Código Fonte',
         items: {
             0: {
-                description: 'SaaS de finanças pessoais construído do zero com Next.js e Supabase. Possui autenticação segura, dados em tempo real e UI de alta performance.',
+                description: 'App mobile Android de finanças pessoais construído com Flutter. Controle receitas, despesas e cartões de crédito em um só lugar.',
             },
             1: {
-                description: 'Plataforma corporativa de alocação de recursos. Desenvolvi o Backend com Node.js, Prisma e PostgreSQL, usando Docker para ambientes consistentes.',
+                description: 'Plataforma gamificada de incentivo à leitura para o LPT/CNPq. Ecossistema completo: API RESTful, PWA para leitores, painel administrativo, agente Desktop sincronizador (Electron) e gerador de relatórios.',
             },
             2: {
-                description: 'Aplicação Full Stack de compartilhamento de código. Construída com React e MongoDB para praticar arquitetura moderna e otimização de performance.',
+                description: 'Plataforma SaaS para alocação de recursos corporativos e universitários. Backend com Node.js, Prisma e PostgreSQL, usando Docker para alta escalabilidade.',
             },
             3: {
+                description: 'Aplicação Full Stack de compartilhamento de código. Construída com React, Node.js e MongoDB para praticar arquitetura moderna e otimização de performance.',
+            },
+            4: {
                 description: 'Ambiente de experimentação self-hosted. Gerenciamento de servidores pessoais com Node.js, automação de rede e gerenciamento de tráfego.',
             },
         },
@@ -51,7 +54,7 @@ const ptBR = {
             backend: 'Backend',
             cloud: 'Cloud (AWS)',
             devops: 'DevOps & Infra',
-            flutter: 'Flutter (Aprendendo)',
+            flutter: 'Flutter (Hobby)',
         },
     },
 
@@ -59,11 +62,10 @@ const ptBR = {
         title: 'Minha Jornada',
         subtitle: 'Na minha jornada até aqui, aprendi muito sobre desenvolvimento e sobre a vida em geral.',
         items: [
-            'Comecei minha jornada como novo desenvolvedor.',
-            'Entrei em uma escola técnica e fiz o curso técnico em tecnologia da informação.',
+            'Entrei no Colégio Técnico de Floriano (CTF/UFPI) e cursei técnico em informática. Bolsista CNPq/Pibic Jr.',
             'Comecei meus estudos em NodeJS e ReactJS.',
-            'Consegui meu primeiro trabalho como freelancer e entrei na faculdade de Ciência da Computação.',
-            'Consegui meu primeiro emprego como desenvolvedor júnior.',
+            'Ingressei na UESPI em Ciência da Computação. Primeiro trabalho como freelancer.',
+            'Entrei na Fundação Cearense de Pesquisa e Cultura como Desenvolvedor Full Stack (EyON/PaaSIoT).',
             'Full Stack. Liderando migração de infraestrutura para AWS (OpenNext + Terraform), implementando pipelines de CI/CD e construindo soluções IoT/Backend com Python/AWS Timestream.',
             'Bacharelado em Ciência da Computação (UESPI).',
         ],
