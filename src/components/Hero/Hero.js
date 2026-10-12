@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <LeftSection>
       <HeroIntro>{t.hero.greeting}</HeroIntro>
-      <SectionTitle as="h1" main>{t.hero.name}</SectionTitle>
+      <SectionTitle as="h1" $main>{t.hero.name}</SectionTitle>
       <HeroText>{t.hero.subtitle}</HeroText>
       <HeroActions>
         <ResumeLink href={language === 'en' ? '/files/jarod_cavalcante_curriculum_eng.pdf' : '/files/jarod_cavalcante_curriculum_pt_br.pdf'}>

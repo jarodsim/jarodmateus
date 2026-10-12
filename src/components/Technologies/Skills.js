@@ -1,12 +1,11 @@
 import { DiReact, DiNodejs } from 'react-icons/di';
 import {
   SiNextdotjs,
-  SiAwslambda,
   SiDocker,
   SiTerraform,
 } from 'react-icons/si';
 import { RiFlutterFill } from 'react-icons/ri';
-import { FaPython } from 'react-icons/fa';
+import { FaAws } from 'react-icons/fa';
 
 export const Skills = [
   {
@@ -19,7 +18,7 @@ export const Skills = [
   },
   {
     slug: 'cloud',
-    Component: SiAwslambda,
+    Component: FaAws,
   },
   {
     slug: 'devops',

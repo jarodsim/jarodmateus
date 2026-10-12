@@ -15,7 +15,7 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h2`
   color: ${({ theme }) => theme.colors.primary1};
-  font-size: ${(props) => props.main ? 'clamp(5rem, 8vw, 9rem)' : 'clamp(3.4rem, 4.5vw, 5.2rem)'};
+  font-size: ${(props) => props.$main ? 'clamp(5rem, 8vw, 9rem)' : 'clamp(3.4rem, 4.5vw, 5.2rem)'};
   line-height: 1.04;
   letter-spacing: -.045em;
   font-weight: 700;
