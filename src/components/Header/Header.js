@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
 } from 'react-icons/ai'
 import {
@@ -10,7 +9,6 @@ import {
   Div1,
   Div2,
   Div3,
-  NavLink,
   SocialIcons,
 } from './HeaderStyles'
 import LanguageSwitcher from './LanguageSwitcher'
@@ -20,44 +18,29 @@ const Header = () => {
   const { t } = useTranslation()
 
   return (
-    <Container>
+    <Container as="header">
       <Div1>
         <Link
           href='/'
-          style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-
-          <img src='/logo.png' height={40} width={40} alt='imagem de logo' style={{
-            borderRadius: 50,
-          }} />{' '}
-          <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }}>
+          className="brand">
+          <img src='/logo.png' height={36} width={36} alt='' />
+          <span>
             Jarod Cavalcante
           </span>
 
         </Link>
       </Div1>
-      <Div2>
-        <li>
-          <Link href='#projects' legacyBehavior>
-            <NavLink>{t.nav.projects}</NavLink>
-          </Link>
-        </li>
-        <li>
-          <Link href='#skills' legacyBehavior>
-            <NavLink>{t.nav.skills}</NavLink>
-          </Link>
-        </li>
-        <li>
-          <Link href='#about' legacyBehavior>
-            <NavLink>{t.nav.about}</NavLink>
-          </Link>
-        </li>
+      <Div2 as="nav" aria-label="Principal">
+        <Link href='#projects'>{t.nav.projects}</Link>
+        <Link href='#skills'>{t.nav.skills}</Link>
+        <Link href='#about'>{t.nav.about}</Link>
       </Div2>
       <Div3>
-        <SocialIcons href='https://github.com/jarodsim'>
-          <AiFillGithub size='3rem' />
+        <SocialIcons href='https://github.com/jarodsim' aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <AiFillGithub size='2.2rem' />
         </SocialIcons>
-        <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/'>
-          <AiFillLinkedin size='3rem' />
+        <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/' aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <AiFillLinkedin size='2.2rem' />
         </SocialIcons>
         <LanguageSwitcher />
       </Div3>

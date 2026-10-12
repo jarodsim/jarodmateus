@@ -3,23 +3,23 @@ import styled from 'styled-components'
 import { useTranslation } from '../../i18n/LanguageContext'
 
 const SwitcherButton = styled.button`
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  color: white;
+  background: transparent;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  border-radius: 5px;
+  color: ${({ theme }) => theme.colors.primary1};
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
+  min-height: 44px;
   padding: 6px 12px;
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: all 0.3s ease;
+  transition: border-color .18s ease, color .18s ease;
   white-space: nowrap;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
+    border-color: ${({ theme }) => theme.colors.accent1};
+    color: ${({ theme }) => theme.colors.accent1};
   }
 `
 
@@ -33,8 +33,8 @@ const LanguageSwitcher = () => {
     }
 
     return (
-        <SwitcherButton onClick={toggleLanguage} aria-label="Switch language">
-            {language === 'en' ? '🇧🇷 PT' : '🇺🇸 EN'}
+        <SwitcherButton onClick={toggleLanguage} aria-label={language === 'en' ? 'Mudar idioma para português' : 'Switch language to English'}>
+            {language === 'en' ? 'PT' : 'EN'}
         </SwitcherButton>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
 } from 'react-icons/ai'
 import { Link } from '../../styles/GlobalComponents'
@@ -41,11 +40,11 @@ const Footer = () => {
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href='https://github.com/jarodsim'>
-            <AiFillGithub size='3rem' />
+          <SocialIcons href='https://github.com/jarodsim' aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <AiFillGithub size='2.2rem' />
           </SocialIcons>
-          <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/'>
-            <AiFillLinkedin size='3rem' />
+          <SocialIcons href='https://www.linkedin.com/in/jarodcavalcante/' aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <AiFillLinkedin size='2.2rem' />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

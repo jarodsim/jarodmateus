@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import {
   BlogCard,
-  CardStripe,
+  CardMedia,
   CardHeader,
   CardTitle,
   CardNumber,
@@ -10,9 +10,7 @@ import {
   CardInfo,
   CardFooter,
   ExternalLinks,
-  PreviewButton,
   GridContainer,
-  Hr,
   Tag,
   TagList,
   ModalOverlay,
@@ -28,17 +26,26 @@ import { useTranslation } from '../../i18n/LanguageContext';
 const Projects = () => {
   const { t } = useTranslation();
   const [preview, setPreview] = useState(null);
+  const closeRef = useRef(null);
 
-  // Close modal on Escape key
   useEffect(() => {
+    if (!preview) return;
+    const previousFocus = document.activeElement;
+    closeRef.current?.focus();
     const handleKey = (e) => {
       if (e.key === 'Escape') setPreview(null);
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        closeRef.current?.focus();
+      }
     };
     window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, []);
+    return () => {
+      window.removeEventListener('keydown', handleKey);
+      previousFocus?.focus();
+    };
+  }, [preview]);
 
-  // Prevent body scroll when modal is open
   useEffect(() => {
     document.body.style.overflow = preview ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
@@ -47,14 +54,16 @@ const Projects = () => {
   return (
     <Section id="projects">
       <SectionDivider />
-      <SectionTitle main>{t.projects.title}</SectionTitle>
+      <SectionTitle>{t.projects.title}</SectionTitle>
 
       <GridContainer>
         {projects.map((p, i) => {
           const itemTranslation = t.projects.items[p.id] || {};
           return (
             <BlogCard key={p.id}>
-              <CardStripe />
+              <CardMedia type="button" onClick={() => setPreview(p)} aria-label={`${t.projects.preview}: ${p.title}`}>
+                <img src={p.image} alt="" loading={i === 0 ? 'eager' : 'lazy'} />
+              </CardMedia>
               <CardHeader>
                 <CardTitle>{p.title}</CardTitle>
                 <CardNumber>0{i + 1}</CardNumber>
@@ -69,12 +78,10 @@ const Projects = () => {
                 </TagList>
               </CardBody>
 
-              <Hr />
-
               <CardFooter>
-                <ExternalLinks href={p.visit} target="_blank" rel="noopener noreferrer">
-                  {t.projects.livePreview}
-                </ExternalLinks>
+                {p.visit !== '#' && <ExternalLinks href={p.visit} target="_blank" rel="noopener noreferrer">
+                  {t.projects.livePreview} <span aria-hidden="true">↗</span>
+                </ExternalLinks>}
 
                 {p.playStore && (
                   <ExternalLinks href={p.playStore} target="_blank" rel="noopener noreferrer">
@@ -88,26 +95,19 @@ const Projects = () => {
                   </ExternalLinks>
                 )}
 
-                <PreviewButton
-                  onClick={() => setPreview(p)}
-                  aria-label={`Ver preview do projeto ${p.title}`}
-                >
-                  🖼 Preview
-                </PreviewButton>
               </CardFooter>
             </BlogCard>
           );
         })}
       </GridContainer>
 
-      {/* Lightbox Modal */}
       {preview && (
-        <ModalOverlay onClick={() => setPreview(null)} role="dialog" aria-modal="true" aria-label={`Preview: ${preview.title}`}>
+        <ModalOverlay onClick={() => setPreview(null)} role="dialog" aria-modal="true" aria-label={`${t.projects.preview}: ${preview.title}`}>
           <ModalContent onClick={(e) => e.stopPropagation()}>
-            <ModalClose onClick={() => setPreview(null)} aria-label="Fechar preview">✕</ModalClose>
+            <ModalClose ref={closeRef} onClick={() => setPreview(null)} aria-label={t.projects.closePreview}>✕</ModalClose>
             <ModalImage
               src={preview.image}
-              alt={`Preview do projeto ${preview.title}`}
+              alt={`${t.projects.imageAlt}: ${preview.title}`}
             />
             <ModalTitle>{preview.title}</ModalTitle>
           </ModalContent>

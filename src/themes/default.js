@@ -1,17 +1,16 @@
 export default {
-  // Temp fonts
   fonts: {
-    title: "Open Sans, sans-serif",
-    main: "Open Sans, sans-serif"
+    title: "Glacial, Arial, sans-serif",
+    main: "Open Sans, Arial, sans-serif"
   },
-  // Colors for layout
   colors: {
-    primary1: "hsl(204,23.8%,95.9%)",
-    background1: "#0F1624",
-    accent1: "hsl(34.9,98.6%,72.9%)",
-    button: "hsl(205.1,100%,36.1%)",
-    background2: "hsl(232.7,27.3%,23.7%)",
-    link: "#18C5DD"
+    primary1: "#F1F5F4",
+    primary2: "#A7B7B9",
+    background1: "#101A20",
+    background2: "#17242B",
+    accent1: "#9FCACD",
+    border: "#304149",
+    link: "#9FCACD"
   },
   // Breakpoints for responsive design
   breakpoints: {

@@ -9,7 +9,7 @@ const ptBR = {
 
     hero: {
         greeting: 'Olá,',
-        name: 'Eu sou Jarod Cavalcante.',
+        name: 'Eu sou o Jarod Cavalcante.',
         subtitle: 'Desenvolvedor Full Stack. Construindo aplicações web escaláveis com Next.js, Python e AWS Serverless.',
         resumeButton: 'Meu Currículo',
         maintainer: 'Mantenedor do',
@@ -18,7 +18,10 @@ const ptBR = {
     projects: {
         title: 'Projetos',
         techStack: 'Tecnologias',
-        livePreview: 'Ver Online',
+        livePreview: 'Ver online',
+        preview: 'Ampliar imagem do projeto',
+        imageAlt: 'Imagem do projeto',
+        closePreview: 'Fechar imagem',
         sourceCode: 'Código Fonte',
         items: {
             0: {
@@ -59,6 +62,7 @@ const ptBR = {
     },
 
     timeline: {
+        current: 'atual',
         title: 'Minha Jornada',
         subtitle: 'Na minha jornada até aqui, aprendi muito sobre desenvolvimento e sobre a vida em geral.',
         items: [

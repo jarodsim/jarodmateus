@@ -1,48 +1,24 @@
 import React from 'react';
 
-import {
-  Section,
-  SectionText,
-  SectionTitle,
-} from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { SectionTitle } from '../../styles/GlobalComponents';
+import { LeftSection, HeroIntro, HeroText, HeroActions, ResumeLink, Maintainer } from './HeroStyles';
 import Link from 'next/link';
-import { detectLanguage, useTranslation } from '../../i18n/LanguageContext';
+import { useTranslation } from '../../i18n/LanguageContext';
 
-const Hero = (props) => {
-  const { t } = useTranslation();
-  const lang = detectLanguage();
+const Hero = () => {
+  const { t, language } = useTranslation();
   return (
-    <>
-      <Section row nopadding>
-        <LeftSection>
-          <SectionTitle main center>
-            {t.hero.greeting} <br></br>
-            {t.hero.name} <br />
-            {t.hero.subtitle}
-          </SectionTitle>
-          <Button
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href =
-                lang === 'en'
-                  ? '/files/jarod_cavalcante_curriculum_eng.pdf'
-                  : '/files/jarod_cavalcante_curriculum_pt_br.pdf';
-            }}
-          >
-            {t.hero.resumeButton}
-          </Button>
-          {t.hero.maintainer}{' '}
-          <Link
-            href={'https://www.npmjs.com/package/dom-watchdog'}
-            target='_blank'
-          >
-            dom-watchdog
-          </Link>
-        </LeftSection>
-      </Section>
-    </>
+    <LeftSection>
+      <HeroIntro>{t.hero.greeting}</HeroIntro>
+      <SectionTitle as="h1" main>{t.hero.name}</SectionTitle>
+      <HeroText>{t.hero.subtitle}</HeroText>
+      <HeroActions>
+        <ResumeLink href={language === 'en' ? '/files/jarod_cavalcante_curriculum_eng.pdf' : '/files/jarod_cavalcante_curriculum_pt_br.pdf'}>
+          {t.hero.resumeButton} <span aria-hidden="true">↗</span>
+        </ResumeLink>
+        <Maintainer>{t.hero.maintainer} <Link href="https://www.npmjs.com/package/dom-watchdog" target="_blank" rel="noopener noreferrer">dom-watchdog</Link></Maintainer>
+      </HeroActions>
+    </LeftSection>
   );
 };
 

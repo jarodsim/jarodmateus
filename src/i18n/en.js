@@ -19,6 +19,9 @@ const en = {
         title: 'Projects',
         techStack: 'Tech Stack',
         livePreview: 'Live Preview',
+        preview: 'Enlarge project image',
+        imageAlt: 'Project image',
+        closePreview: 'Close image',
         sourceCode: 'Source Code',
         items: {
             0: {
@@ -59,6 +62,7 @@ const en = {
     },
 
     timeline: {
+        current: 'present',
         title: 'My Journey',
         subtitle: 'In my journey to date, I have learned a great deal about development and life in general.',
         items: [
