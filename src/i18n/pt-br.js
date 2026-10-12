@@ -1,5 +1,6 @@
 const ptBR = {
-    pageTitle: 'Jarod Cavalcante - Desenvolvedor de Software',
+    pageTitle: 'Jarod Cavalcante - Desenvolvedor Full Stack e Cloud',
+    pageDescription: 'Desenvolvedor Full Stack e Cloud com experiência em APIs serverless, IoT, segurança e infraestrutura AWS. Projetos em Python, TypeScript e Next.js.',
 
     nav: {
         projects: 'Projetos',
@@ -10,7 +11,7 @@ const ptBR = {
     hero: {
         greeting: 'Olá,',
         name: 'Eu sou o Jarod Cavalcante.',
-        subtitle: 'Desenvolvedor Full Stack. Construindo aplicações web escaláveis com Next.js, Python e AWS Serverless.',
+        subtitle: 'Desenvolvedor Full Stack e Cloud. Crio APIs e aplicações distribuídas com Python, TypeScript e AWS, da arquitetura à operação em produção.',
         resumeButton: 'Meu Currículo',
         maintainer: 'Mantenedor do',
     },
@@ -28,10 +29,10 @@ const ptBR = {
                 description: 'App mobile Android de finanças pessoais construído com Flutter. Controle receitas, despesas e cartões de crédito em um só lugar.',
             },
             1: {
-                description: 'Plataforma gamificada de incentivo à leitura para o LPT/CNPq. Ecossistema completo: API RESTful, PWA para leitores, painel administrativo, agente Desktop sincronizador (Electron) e gerador de relatórios.',
+                description: 'Plataforma de gamificação de leitura com API central, PWA e agente desktop que sincroniza registros de acervos físicos.',
             },
             2: {
-                description: 'Plataforma SaaS para alocação de recursos corporativos e universitários. Backend com Node.js, Prisma e PostgreSQL, usando Docker para alta escalabilidade.',
+                description: 'Projeto de conclusão de curso: plataforma SaaS para gestão de recursos corporativos e universitários, com backend em Node.js, Prisma e PostgreSQL.',
             },
             3: {
                 description: 'Aplicação Full Stack de compartilhamento de código. Construída com React, Node.js e MongoDB para praticar arquitetura moderna e otimização de performance.',
@@ -44,13 +45,13 @@ const ptBR = {
 
     skills: {
         title: 'Habilidades',
-        subtitle: 'Trabalhei com diversas tecnologias como desenvolvedor para criar e manter meus projetos.',
+        subtitle: 'Tecnologias que uso para construir aplicações, operar infraestrutura e manter sistemas em produção.',
         items: {
-            frontend: 'Expertise profunda no ecossistema React incluindo Next.js e OpenNext. Arquitetura com Turborepo.',
-            backend: 'Construindo sistemas backend robustos com Node.js e Python. Experiência com Serverless Framework e arquiteturas Event-driven.',
-            cloud: 'Ampla experiência com AWS: Lambda, IoT Core, Timestream, DynamoDB, S3, CloudFront e Cognito.',
-            devops: 'Infraestrutura como Código com Terraform. Containerização com Docker e automação CI/CD usando GitHub Actions.',
-            flutter: 'Desenvolvendo aplicações mobile multiplataforma.',
+            frontend: 'Aplicações web com React, Next.js e TypeScript.',
+            backend: 'APIs RESTful e serviços serverless com Python e Node.js, incluindo ingestão de telemetria IoT.',
+            cloud: 'AWS Lambda, API Gateway, Cognito, WAF e CloudFront para serviços, autenticação e proteção de aplicações.',
+            devops: 'Infraestrutura com Terraform e Docker, CI/CD com GitHub Actions e CodePipeline, e resposta a incidentes em produção.',
+            flutter: 'Aplicativo Android de finanças pessoais desenvolvido com Flutter.',
         },
         titles: {
             frontend: 'Frontend',
@@ -64,14 +65,12 @@ const ptBR = {
     timeline: {
         current: 'atual',
         title: 'Minha Jornada',
-        subtitle: 'Na minha jornada até aqui, aprendi muito sobre desenvolvimento e sobre a vida em geral.',
+        subtitle: 'Formação e experiência profissional.',
         items: [
-            'Entrei no Colégio Técnico de Floriano (CTF/UFPI) e cursei técnico em informática. Bolsista CNPq/Pibic Jr.',
-            'Comecei meus estudos em NodeJS e ReactJS.',
-            'Ingressei na UESPI em Ciência da Computação. Primeiro trabalho como freelancer.',
-            'Entrei na Fundação Cearense de Pesquisa e Cultura como Desenvolvedor Full Stack (EyON/PaaSIoT).',
-            'Full Stack. Liderando migração de infraestrutura para AWS (OpenNext + Terraform), implementando pipelines de CI/CD e construindo soluções IoT/Backend com Python/AWS Timestream.',
-            'Bacharelado em Ciência da Computação (UESPI).',
+            'Concluí o curso técnico em informática no Colégio Técnico de Floriano (CTF/UFPI).',
+            'Iniciei o bacharelado em Ciência da Computação na UESPI.',
+            'Desenvolvedor Full Stack na Fundação Cearense de Pesquisa e Cultura, com atuação em APIs serverless para IoT, infraestrutura AWS, controle de acesso e incidentes em produção.',
+            'Concluí o bacharelado em Ciência da Computação na UESPI.',
         ],
     },
 

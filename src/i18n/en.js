@@ -1,5 +1,6 @@
 const en = {
-    pageTitle: 'Jarod Cavalcante - Software Developer',
+    pageTitle: 'Jarod Cavalcante - Full Stack and Cloud Developer',
+    pageDescription: 'Full Stack and Cloud Developer experienced in serverless APIs, IoT, security, and AWS infrastructure. Projects in Python, TypeScript, and Next.js.',
 
     nav: {
         projects: 'Projects',
@@ -10,7 +11,7 @@ const en = {
     hero: {
         greeting: 'Hi,',
         name: 'I am Jarod Cavalcante.',
-        subtitle: 'Full Stack Developer. Building scalable web apps with Next.js, Python, and AWS Serverless.',
+        subtitle: 'Full Stack and Cloud Developer. I build APIs and distributed applications with Python, TypeScript, and AWS, from architecture to production operations.',
         resumeButton: 'My Resume',
         maintainer: 'Maintainer of',
     },
@@ -28,10 +29,10 @@ const en = {
                 description: 'Personal finance Android app built with Flutter. Track income, expenses, and credit cards in one place.',
             },
             1: {
-                description: 'Gamified reading incentive platform for LPT/CNPq. Full ecosystem: RESTful API, reader PWA, admin panel, Desktop sync agent (Electron), and report generator.',
+                description: 'Reading gamification platform with a central API, reader PWA, and desktop agent that syncs physical library records.',
             },
             2: {
-                description: 'SaaS platform for corporate and university resource allocation. Built the backend with Node.js, Prisma, and PostgreSQL, using Docker for scalability.',
+                description: 'Bachelor’s thesis project: a SaaS platform for managing corporate and university resources, with a Node.js, Prisma, and PostgreSQL backend.',
             },
             3: {
                 description: 'Full Stack code sharing app. Built with React, Node.js, and MongoDB to practice modern architecture and performance optimization.',
@@ -44,13 +45,13 @@ const en = {
 
     skills: {
         title: 'Skills',
-        subtitle: "I've worked with multiple technologies as a developer to develop & maintain my projects.",
+        subtitle: 'Technologies I use to build applications, operate infrastructure, and maintain production systems.',
         items: {
-            frontend: 'Deep expertise in React ecosystem including Next.js and OpenNext. Architecture with Turborepo.',
-            backend: 'Building robust backend systems with Node.js and Python. Experience with Serverless Framework and Event-driven architectures.',
-            cloud: 'Extensive AWS experience: Lambda, IoT Core, Timestream, DynamoDB, S3, CloudFront, and Cognito.',
-            devops: 'Infrastructure as Code with Terraform. Containerization with Docker, and CI/CD automation using GitHub Actions.',
-            flutter: 'Developing cross-platform mobile applications.',
+            frontend: 'Web applications with React, Next.js, and TypeScript.',
+            backend: 'RESTful APIs and serverless services with Python and Node.js, including IoT telemetry ingestion.',
+            cloud: 'AWS Lambda, API Gateway, Cognito, WAF, and CloudFront for services, authentication, and application protection.',
+            devops: 'Infrastructure with Terraform and Docker, CI/CD with GitHub Actions and CodePipeline, and production incident response.',
+            flutter: 'Personal finance Android app built with Flutter.',
         },
         titles: {
             frontend: 'Frontend',
@@ -64,14 +65,12 @@ const en = {
     timeline: {
         current: 'present',
         title: 'My Journey',
-        subtitle: 'In my journey to date, I have learned a great deal about development and life in general.',
+        subtitle: 'Education and professional experience.',
         items: [
-            'Enrolled at CTF/UFPI technical college, studying IT. CNPq/Pibic Jr. research scholarship.',
-            'Started studying NodeJS and ReactJS.',
-            'Started B.Sc. in Computer Science at UESPI. First job as a freelancer.',
-            'Joined Fundação Cearense de Pesquisa e Cultura as a Full Stack Developer (EyON/PaaSIoT).',
-            'Full Stack. Leading infrastructure migration to AWS (OpenNext + Terraform), implementing CI/CD pipelines, and building IoT/Backend solutions with Python/AWS Timestream.',
-            'B.Sc. in Computer Science (UESPI).',
+            'Completed a technical degree in IT at CTF/UFPI.',
+            'Started a B.Sc. in Computer Science at UESPI.',
+            'Full Stack Developer at Fundação Cearense de Pesquisa e Cultura, working on serverless IoT APIs, AWS infrastructure, access control, and production incidents.',
+            'Graduated with a B.Sc. in Computer Science from UESPI.',
         ],
     },
 

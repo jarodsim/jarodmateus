@@ -32,6 +32,10 @@ export function LanguageProvider({ children }) {
         setMounted(true)
     }, [])
 
+    useEffect(() => {
+        document.documentElement.lang = language === 'en' ? 'en' : 'pt-BR'
+    }, [language])
+
     const setLanguage = (lang) => {
         setLanguageState(lang)
         if (typeof window !== 'undefined') {

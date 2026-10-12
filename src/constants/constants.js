@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: 'BSGame',
+    description:
+      'Reading gamification platform with a central API, reader PWA, and desktop agent that syncs physical library records.',
+    image: '/images/bsgame.png',
+    tags: ['TypeScript', 'Next.js', 'Electron', 'PostgreSQL', 'Drizzle ORM'],
+    visit: 'https://lptextual.me/bs-game',
+    id: 1,
+  },
+  {
+    title: 'Recursofy',
+    description:
+      'SaaS platform for managing corporate and university resources, with a Node.js, Prisma, and PostgreSQL backend.',
+    image: '/images/recursofy.png',
+    tags: ['ReactJS', 'NodeJS', 'PostgreSQL', 'Prisma', 'Docker', 'Firebase'],
+    visit: 'https://sora-landingpage.vercel.app/',
+    id: 2,
+  },
+  {
     title: 'Meu Trocado',
     description:
       'Personal finance Android app built with Flutter. Track income, expenses, and credit cards in one place.',
@@ -8,24 +26,6 @@ export const projects = [
     visit: 'https://meutrocado.jarod.dev/',
     playStore: 'https://play.google.com/store/apps/details?id=com.jlabs.meutrocadoapp',
     id: 0,
-  },
-  {
-    title: 'BSGame',
-    description:
-      'Gamified reading incentive platform for LPT/CNPq. Full ecosystem: RESTful API, reader PWA, admin panel, Desktop sync agent (Electron), and report generator.',
-    image: '/images/bsgame.png',
-    tags: ['TypeScript', 'Next.js', 'Electron', 'PostgreSQL', 'MongoDB', 'AWS S3'],
-    visit: 'https://lptextual.me/bs-game',
-    id: 1,
-  },
-  {
-    title: 'Recursofy',
-    description:
-      'SaaS platform for corporate and university resource allocation. Built the backend with Node.js, Prisma, and PostgreSQL, using Docker for scalability.',
-    image: '/images/recursofy.png',
-    tags: ['ReactJS', 'NodeJS', 'PostgreSQL', 'Prisma', 'Docker', 'Firebase'],
-    visit: 'https://sora-landingpage.vercel.app/',
-    id: 2,
   },
   {
     title: 'Unipad',
@@ -50,18 +50,16 @@ export const projects = [
 
 export const TimeLineData = [
   {
-    year: 2017,
-    text: 'I entered a technical college (CTF/UFPI) and took the technical course in information technology.',
+    year: '2017–2019',
+    text: 'Completed a technical degree in IT at CTF/UFPI.',
   },
-  { year: 2019, text: 'I started my studies in NodeJS and ReactJS. CNPq/Pibic Jr. research scholarship.' },
   {
-    year: 2021,
-    text: 'Started B.Sc. in Computer Science at UESPI. Got my first job as a freelancer.',
+    year: 2020,
+    text: 'Started a B.Sc. in Computer Science at UESPI.',
   },
-  { year: 2021, text: 'Joined Fundação Cearense de Pesquisa e Cultura as a Full Stack Developer (EyON/PaaSIoT).' },
   {
     year: '2021 - Current',
-    text: 'Full Stack. Leading infrastructure migration to AWS (OpenNext + Terraform), implementing CI/CD pipelines, and building IoT/Backend solutions with Python/AWS Timestream.',
+    text: 'Full Stack Developer at Fundação Cearense de Pesquisa e Cultura, working on serverless IoT APIs, AWS infrastructure, access control, and production incidents.',
   },
   {
     year: 2026,

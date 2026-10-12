@@ -7,6 +7,11 @@ function PageHead() {
   return (
     <Head>
       <title>{t.pageTitle}</title>
+      <meta name="description" content={t.pageDescription} />
+      <meta property="og:title" content={t.pageTitle} />
+      <meta property="og:description" content={t.pageDescription} />
+      <meta name="twitter:title" content={t.pageTitle} />
+      <meta name="twitter:description" content={t.pageDescription} />
     </Head>
   )
 }
